@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan & Pay</title>
+
+    <style>
+        *{
+            margin: 5px;
+        }
+
+    h1{
+        position: relative;
+        top: 300px;
+        background-color: green;
+        color: white;
+        padding: 15px;
+        font-family: HelvLight;
+    }
+
+    span{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h3{
+        font-family: Arial Rounded MT;
+    }
+
+/*---------------   loader  ---------------------*/    
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    border: 8px solid #f3f3ff;
+    border-top: 9px solid green;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide the preloader once the content is loaded */
+    body.loaded .preloader {
+    display: none;
+    }
+    </style>
+
+</head>
+<body>
+<center>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Your website content goes here -->
+    <h1>Payment successful</h1><br>
+    <span>
+        thanku for become our Premium customer<h3>Team Tution</h3>
+    </span>
+
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Your website content has been fully loaded
+    setTimeout(function () {
+        document.body.classList.add("loaded");
+    }, 5000); // Adjust the timeout as needed
+    });
+    </script>
+
+</center>    
+</body>
+</html>
