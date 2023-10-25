@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <!------   LOGO   ------>
+    <link rel="apple-touch-icon" sizes="180x180" href="Logos/accountLOGO/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Logos/accountLOGO/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Logos/accountLOGO/favicon-16x16.png">
+    <link rel="manifest" href="Logos/accountLOGO/site.webmanifest">
+    <!---------------------->
+
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        .TOPp{
+            position: relative;
+            top: 300px;
+        }
+
+        body{
+            background-color: rgb(34,193,195);
+        }
+
+        .bord{
+            border: 2px solid none;
+            background-color: rgba(255, 255, 255, 0.842);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        p{
+            color: darkblue;
+            padding: 5px;
+            font-size: 35px;
+            font-family: Verdana;
+            font-weight: bolder;
+        }
+
+        .noacount{
+            font-size: 15px;
+            font-family: Arial Rounded MT;
+        }
+
+        .iNput{
+            width: 100%;
+            height: 25px;
+        }
+
+        .SUBcont{
+            width: 50%;
+            color: black;
+            background-color: lime;
+            font-size: 18px;
+            font-family: Verdana;
+            border: lime;
+            padding: 5px;
+        }
+
+        @media screen and (max-width:600px){
+            .TOPp{
+            position: relative;
+            top: 200px;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+<center>
+
+<div class="TOPp">
+    <tr><td>
+        <table class="bord" cellpadding="15px">
+            <td>
+                <form action="index.html">
+
+                <p>Login</p><br>
+                <input type="text" required name="username" placeholder="user name" class="iNput" id="username"><br><br>
+
+                <input type="password" require name="pincode" placeholder="pincode" class="iNput" id="pincode" max="9999"><br><br>
+
+                <a href="TTHmain.html"><input type="submit" value="Proceed" class="SUBcont" name="submit"></a>
+                <br><br>
+            
+                </form>
+
+                <hr><br>
+                <span class="noacount">Don't have any Account</span>
+                <a href="logsignUP/signUP.html"><b><u>sign up</u></b></a>
+
+
+            </td>
+        </table>
+    </td></tr>
+</div>
+
+</center>    
+</body>
+</html>
