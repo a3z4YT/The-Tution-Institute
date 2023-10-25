@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAY</title>
+
+<style>
+     *{
+        margin: 0px;
+       /* background-image: url("https://images3.alphacoders.com/646/646611.jpg"); */
+    }
+
+    .order{
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgb(136, 51, 216);
+        color: white;
+        font-family: Arial Rounded MT;
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .pay{
+        position: relative;
+        top: 50px;
+        border: 1px solid none;
+        background-color: rgba(210, 207, 207, 0.624);
+        color: black;
+        font-family: Arial Rounded MT;
+        font-size: 20px;
+    }
+
+    .full{
+        width: 100%;
+        height: 15px;
+        padding: 10px;
+    }
+
+    img{
+        padding: 2px;
+        width: 55px;
+        align-items: left;
+        text-align: left;
+    }
+
+    .subCOUNT{
+        background-color: rgb(18, 133, 18);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .subCOUNT:hover{
+        background-color: rgb(77, 238, 77);
+        color: black;
+    }
+
+    .submitt{
+        position: relative;
+        top: 50px;
+        width: 817px;
+        background-color: rgba(210, 207, 207, 0.624);
+    }
+
+    .SP{
+        position: relative;
+        top: 50px;
+        width: 817px;
+        background-color: rgba(210, 207, 207, 0.624);
+    }
+
+    .btn{
+        background-color: rgb(228, 228, 228);
+        color: black;
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    a:hover[href="../Scan&Pay.html"]{
+        color: white;
+        background-color: rgb(33, 33, 33);
+    }
+
+    @media screen and (max-width:600px){
+        .submitt{
+        width: 440px;
+        }
+
+        .SP{
+            width: 440px;
+        }
+    }
+</style>
+
+</head>
+<body>
+<center>
+
+    <tr><td>
+        <table class="order" cellpadding="15px">
+            <td>
+        
+                <p>Order Summary</p>
+
+                <br>
+
+                <hr>
+
+                <br>
+
+                <span>
+                    plan: Trail plan  <br>
+                    MRP: <u>Rs-10</u>   <br>
+                    starts from: Tomarrow   <br>
+                    end in: 6 days  <br>
+                </span>
+            </td>
+        </table>
+    </td></tr>
+
+    <tr><td>
+        <table class="pay" cellpadding="30px">
+    
+            <td>
+
+
+                <form action="../Paying.html">
+                <p>BILLING ADRESS</p>
+
+                <br>
+
+                <span>Full name:</span>
+                <input type="text" required name="fullname" placeholder="Ram" class="full">
+
+                <br><br>
+
+                <span>Email:</span>
+                <input type="email" required name="email" placeholder="example@gmail.com" class="full">
+
+                <br><br>
+
+                <span>address:</span>
+                <input type="text" required name="adress" placeholder="Road - Street - Locality"  class="full">
+
+                <br><br>
+
+                <span>City:</span>
+                <input type="text" required name="city" placeholder="Ex- Mumbai" class="full">
+
+                <br><br>
+                
+                <span>Country:</span>
+                <input name="country" value="India" class="full">
+                
+                <br><br>
+
+                <span>Zip Code:</span>
+                <input type="number" required name="zipcode" placeholder="123 456" class="full">   
+            
+            <td id="#paymentdetails">    
+
+                <p>Payment</p>
+
+                <br>
+
+                <span>Accepted Caeds:</span><br>
+                <span>
+
+                    <img src="../resources/cred.png"> <img src="../resources/MasterCard.png"> <img src="../resources/Visa.png"> <img src="../resources/icici.jpg">
+                </span>
+
+                <br><br>
+
+                <span>Name on card:</span>
+                <input type="text" required name="name on card" placeholder="Mr. Ram" class="full">
+
+                <br><br>
+
+                <span>Credit card number:</span>
+                <input type="number" required name="cardmumber" placeholder="1111-2222-3333-4444" class="full">
+
+                <br><br>
+
+                <span>Exp Month:</span>
+                <input type="month" required name="empmonth" class="full" >
+
+                <br><br>
+                
+                <span>Exp Year:</span>
+                <input type="number" required name="expyear" placeholder="2023" class="full"> 
+
+                <br><br>
+                
+                <span>CVV:</span>
+                <input type="number" required name="cvv" placeholder="1234" class="full">
+             </td>
+        </table>
+    </td></tr>
+
+    <tr><td>
+        <table class="submitt" cellpadding="10px">
+            <td>
+                <input type="submit" name="submit" value="submit" class="subCOUNT">
+            </td>
+        </table>
+    </td></tr>
+</form>
+
+<tr><td>
+    <table class="SP" cellpadding="10px">
+        <td>
+            <a href="../Scan&Pay.html">
+            <button class="btn">Scan & Pay</button>
+            </a>
+        </td>
+    </table>
+</td></tr>
+
+</center>
+</body>
+</html>
